@@ -1,0 +1,108 @@
+html {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 980px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(7, 107, 7);
+}
+
+header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
+    color: rgb(0, 45, 4);
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav a {
+    padding: 4px 8px;
+    background-color: rgb(131, 212, 108);
+    display: block;
+    float: left;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: rgb(212, 212, 108);
+}
+
+ul{
+    list-style: none;
+}
+
+.narrow {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h1 {
+    background-color: rgb(7, 107, 7);
+    color: white;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+section {
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+    margin: 32px;
+}
+
+form {
+    padding: 16px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 8px;
+}
+
+label span {
+    margin-right: 8px;
+}
+
+.form-align {
+    display: inline-block;
+}
+
+.form-row {
+    text-align: right;
+}
+
+.action {
+    padding: 8px 16px;
+    margin: auto;
+    background-color: rgb(131, 212, 108);
+    display: block;
+    border: none;
+}
+
+.action:hover {
+    cursor: pointer;
+    background-color: rgb(212, 212, 108);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
