@@ -20,5 +20,12 @@ async function loadGames(ctx) {
     const game = await getGameById(gameId);
     return html`
     <h1>${game.name}</h1>
-    <p>Mode: ${game.mode}</p>`;
+    <p>Mode: ${game.mode}</p>
+    <p><button @click=${joinGame} class="action">Join Game</button></p>`;
+
+    function joinGame(event) {
+        event.target.disabled = true;
+        event.target.textContent = 'Loading...';
+        ctx.page.redirect(`/play/${game.objectId}`);
+    }
 }

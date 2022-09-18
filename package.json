@@ -1,7 +1,6 @@
 {
   "name": "tank-game",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +12,15 @@
   "dependencies": {
     "express": "^4.18.1",
     "socket.io": "^4.5.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiaPetrova/Workshop-Tanks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LiaPetrova/Workshop-Tanks/issues"
+  },
+  "homepage": "https://github.com/LiaPetrova/Workshop-Tanks#readme",
+  "description": ""
 }

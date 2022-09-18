@@ -49,9 +49,7 @@ function init(server) {
         socket.on('position', playerData => {
             if (rooms[roomId]) {
                 const player = rooms[roomId].players.get(username);
-                if (player) {
-                    Object.assign(player, playerData);
-                }
+                Object.assign(player, playerData);
             }
         });
 

@@ -10,7 +10,7 @@ const catalogTemplate = (gamesPromise) => html`
 </section>`;
 
 const lobbyCard = game => html`
-<li>${game.name}</li>`;
+<li>${game.name} <a class="button" href="/games/${game.objectId}">View lobby</a></li>`;
 
 const gamesList = (games) => games.length == 0 
     ? html`<p>No lobbies hosted yet!<a href="/create">Be the first!</a> </p>`

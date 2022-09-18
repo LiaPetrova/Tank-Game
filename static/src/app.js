@@ -11,6 +11,7 @@ import { registerView } from './views/register.js';
 import { catalogView } from './views/catalog.js';
 import { createView } from './views/create.js';
 import { detailsView } from './views/details.js';
+import { canvasView } from './views/canvas.js';
 window.users = users;
 const main = document.getElementById('main');
 
@@ -24,6 +25,7 @@ page('/register', registerView);
 page('/games', catalogView);
 page('/create', createView);
 page('/games/:id', detailsView);
+page('/play/:id', canvasView);
 page.start();
 
 
